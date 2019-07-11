@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="text-center product-form-section">
+        <form action="mail.php" method="post" class="" id="order-form-id">
+            <div class="container">
+                <div class="product-wrapper first-product">
+                    <div class="row product-heading">
+                        <div class="col-8">
+                            <div class="product-heading-inner">
+                                <h3>Unsere Millis</h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <p class="anzahl">Anzahl</p>
+                        </div>
+                    </div>
+                    <div class="product-row" id="product_01">
+                        <div class="single-product row">
+                            <div class="col-8 text-left" id="prod_01_variant_01_title">
+                                <h4>100 Millis für 17 Euro</h4>
+                                <p class="vat-info">
+                                    (inkl 7% Mwst, Grundpreis 17 Euro pro 100 Stück) 
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="product-quantity">
+                                    <input type="number" name="prod_01_variant_01_quantity" value="0" class="" id="prod_01_variant_01">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product row">
+                            <div class="col-8 text-left" id="prod_01_variant_02_title">
+                                <h4>250 Millis für 31 Euro</h4>
+                                <p class="vat-info">
+                                    (inkl 7% Mwst, Grundpreis 12,40 Euro pro 100 Stück) 
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="product-quantity">
+                                    <input type="number" name="prod_01_variant_02_quantity" value="0" class="" id="prod_01_variant_02">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product row">
+                            <div class="col-8 text-left" id="prod_01_variant_03_title">
+                                <h4>500 Millis für 45 Euro</h4>
+                                <p class="vat-info">
+                                    (inkl 7% Mwst, Grundpreis 9 Euro pro 100 Stück)
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="product-quantity">
+                                    <input type="number" name="prod_01_variant_03_quantity" value="0" class="" id="prod_01_variant_03">
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>    
+                </div>
+                
+                <div class="product-wrapper">
+                    <div class="row product-heading">
+                        <div class="col-12">
+                            <div class="product-heading-inner">
+                                <h3>Unser Laktasepulver</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-row" id="product_02">
+                        <div class="single-product row">
+                            <div class="col-8 text-left" id="prod_02_variant_01_title">
+                                <h4>50g Laktasepulver für 50 Euro</h4>
+                                <p class="vat-info">
+                                    (inkl 7% Mwst, Grundpreis 100 Euro pro 100 Gramm)
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="product-quantity">
+                                    <input type="number" name="prod_02_variant_01_quantity" value="0" class="" id="prod_02_variant_01">
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>      
+                </div>
+                
+                <div class="product-wrapper last">
+                    <div class="row product-heading">
+                        <div class="col-12">
+                            <div class="product-heading-inner">
+                                <h3>Unser Bacillus Coagulans</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-row" id="product-03">
+                        <div class="single-product row">
+                            <div class="col-8 text-left" id="prod_03_variant_01_title">
+                                <h4>16 Gramm für 16 Euro</h4>
+                                <p class="vat-info">
+                                    (inkl 7% Mwst, Grundpreis 100 Euro pro 100 Gramm)
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="product-quantity">
+                                    <input type="number" name="prod_03_variant_01_quantity" value="0" class="" id="prod_03_variant_01">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="single-product row">
+                            <div class="col-8 text-left" id="prod_03_variant_02_title">
+                                <h4>80 Gramm für 50 Euro</h4>
+                                <p class="vat-info">
+                                    (inkl 7% Mwst, Grundpreis 62,50  Euro pro 100 Gramm)
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="product-quantity">
+                                    <input type="number" name="prod_03_variant_02_quantity" value="0" class="" id="prod_03_variant_02">
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>    
+                </div><!-- product-wrapper -->
+        
+                
+                <div class="row product-summary-row mt-5">
+                    <div class="col-md-12">
+        
+                        <h2 class="align-center pb-2 mbr-fonts-style display-2">Sie bestellen also:</h2>
+        
+                        <div class="cart-total">
+                            <div class="row product-summary" id="prod_01_variant_01_summary">
+                                <div class="col-7 text-left">
+                                    <span>100 Millis für 17 Euro</span>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <span></span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row product-summary" id="prod_01_variant_02_summary">
+                                <div class="col-7 text-left">
+                                    <span>250 Millis für 31 Euro</span>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <span></span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row product-summary" id="prod_01_variant_03_summary">
+                                <div class="col-7 text-left">
+                                    <span>500 Millis für 45 Euro</span>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <span></span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row product-summary" id="prod_02_variant_01_summary">
+                                <div class="col-7 text-left">
+                                    <span>50g Laktasepulver für 50 Euro</span>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <span></span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row product-summary" id="prod_03_variant_01_summary">
+                                <div class="col-7 text-left">
+                                    <span>16 Gramm für 16 Euro</span>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <span></span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row product-summary" id="prod_03_variant_02_summary">
+                                <div class="col-7 text-left">
+                                    <span>80 Gramm für 50 Euro</span>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <span></span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <span></span>
+                                </div>
+                            </div>
+        
+                            <div class="section-divider"></div>
+                            <div class="row">
+                                <div class="col-6 text-left">
+                                    <span class="h4">Gesamtsumme:</span>
+                                </div>
+                                <div id="total_amount" class="col-6 text-right">
+                                    <span>0.0 Euro</span>
+                                </div>
+                            </div>
+                            <div class="row pt-0 mt-0">
+                                <div id="vat-cell" class="col-12 text-right h6 pt-0 mt-0">
+                                    (inkl. <span class="px-2 vat_amount">0.0</span> Euro MwSt; kostenfreier Versand))
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-12 cart-customer-details">
+                        <div class="row justify-content-center">
+                            <div class="title col-12">
+                                <h2>Wohin dürfen wir Ihre Mittel senden?</h2>
+                                <!-- <h3>Hier konnen Sie uns Ihre neue Adresse mitteilen und Ihre Bestellung mit neuer Adresse zu uns senden.</h3> -->
+                            </div>
+                        </div>
+                        <div class="form-row text-left">
+                            <div class="row row-sm-offset">
+                                <div class="col-md-6 multi-horizontal">
+                                    <div class="form-group"> 
+                                        <label class="form-control-label">E-Mail Adresse</label>
+                                        <br> 
+                                        <span class="wpcf7-form-control-wrap email">
+                                            <input type="email" name="email" value="" size="40" class="form-control" id="email" placeholder="E-Mail" required>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal">
+                                    <div class="form-group"> 
+                                        <label class="form-control-label" for="first-name">Ihr Vorname</label>
+                                        <br> 
+                                        <span class="wpcf7-form-control-wrap first-name">
+                                            <input type="text" name="first-name" value="" size="40" class="form-control" id="first-name" placeholder="Vorname">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal">
+                                    <div class="form-group"> 
+                                        <label class="form-control-label" for="surname">Ihr Nachname</label>
+                                        <br> 
+                                        <span class="wpcf7-form-control-wrap surname">
+                                            <input type="text" name="surname" value="" size="40" class="form-control" id="surname" placeholder="Nachname">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="country">Country</label>
+                                        <div class="input-select">
+                                            <span class="wpcf7-form-control-wrap country">
+                                                <select name="country" class="" id="country">
+                                                    <option value="Auswählen">Auswählen</option>
+                                                    <option value="Deutschland">Deutschland</option>
+                                                    <option value="Österreich">Österreich</option>
+                                                    <option value="Schweiz">Schweiz</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Frankreich">Frankreich</option>
+                                                    <option value="Niederlande">Niederlande</option>
+                                                    <option value="Belgien">Belgien</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal address-field">
+                                    <div class="form-group"> 
+                                        <label class="form-control-label" for="streetaddress">Ihre Adresse</label>
+                                        <br> 
+                                        <span class="streetaddress">
+                                            <input type="text" name="streetaddress" value="" size="40" class="form-control" id="streetaddress" placeholder="Straße">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal address-field">
+                                    <div class="form-group"> 
+                                        <label class="form-control-label" for="apt" style="visibility:hidden;">Ihre Hausnummer</label>
+                                        <br> 
+                                        <span class="apt"><input type="text" name="apt" value="" size="40" class="form-control" id="apt" placeholder="Hausnummer">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal address-field">
+                                    <div class="form-group"> 
+                                        <span class="postcode">
+                                            <input type="text" name="postcode" value="" size="40" class="form-control" id="postcode" placeholder="Postleitzahl">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 multi-horizontal address-field">
+                                    <div class="form-group"> 
+                                        <span class="town">
+                                            <input type="text" name="town" value="" size="40" class="form-control" id="town" placeholder="Ihre Stadt">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="title col-12">
+                                        <h2>Wie möchten Sie zahlen?</h2>
+                                        <div class="form-group">
+                                            <div class="input-select">
+                                                <span class="wpcf7-form-control-wrap payment_method">
+                                                    <select name="payment_method" class="wpcf7-form-control wpcf7-select" id="payment_method" aria-invalid="false">
+                                                        <option value="Rechnungszahlung">Rechnungszahlung</option>
+                                                        <option value="Paypal">Paypal</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row form-submit-button text-center" style="margin-top:10px;">   
+                                <input type="hidden" name="js-enabled" id="js-enabled" value="">
+                                <div class="col-12"> 
+                                    <span class="input-group-btn">
+                                        <button href="" type="submit" class="btn btn-primary display-4">Jetzt Kaufen</button>
+                                    </span>
+                                    <div class="terms-info">Mit Ihrer Bestellung stimmen Sie<br> der <a href="https://laktasekampagne.de/widerruf/">Widerrufsbelehrung</a>, unserer <a href="https://laktasekampagne.de/datenschutz/">Datenschutzerklärung</a> und unseren <a href="https://laktasekampagne.de/agb/">AGB</a> zu
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end of row-->
+            </div>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
